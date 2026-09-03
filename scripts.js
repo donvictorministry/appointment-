@@ -825,10 +825,13 @@ var DV_PAGES = {
       '<h2 class="dv-profile-name">Reverend [Your Name]</h2>' +
       '<span class="dv-profile-role">Prophet of God \u00b7 Founder &amp; Visionary \u00b7 Trainer &amp; Researcher \u00b7 Full Stack Developer</span>' +
       '</div><div class="dv-profile-body">' +
+      '<div class="dv-text-card">' +
+      '<div class="dv-text-card-title">About Our<br>Founder</div>' +
       '<div id="dvBioText" class="dv-profile-bio">Our Founder is an ordained Reverend Minister of the Lord Jesus Christ, a multifaceted personality with a PhD in Christian Education and Philosophy, serving as a trainer, researcher, and theologian dedicated to online counseling.</div>' +
-            '<button id="dvBioBtn" class="dv-bio-toggle">Show more</button>' +
-      '<div class="dv-action-group">' +
-      '<a href="PASTE_YOUR_PORTFOLIO_LINK_HERE" target="_blank" class="dv-pill-btn dv-pill-solid"><span style="text-decoration: underline;">View Portfolio</span></a>' +
+      '<button id="dvBioBtn" class="dv-bio-toggle">Show more</button>' +
+      '</div>' +
+      '<div class="dv-action-group">' +       
+     '<a href="PASTE_YOUR_PORTFOLIO_LINK_HERE" target="_blank" class="dv-pill-btn dv-pill-solid"><span style="text-decoration: underline;">View Portfolio</span></a>' +
       '<a href="PASTE_YOUR_WHATSAPP_LINK_HERE" target="_blank" class="dv-pill-btn dv-pill-green"><span class="dv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span><span style="text-decoration: underline;">Follow WhatsApp Channel</span></a>' +
       '</div>' +
       '<div class="dv-stats-card"><div class="dv-stats-grid">' +
