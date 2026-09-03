@@ -172,13 +172,15 @@ button, input, textarea { font-family: inherit; }
 .dv-info-text { font-size: 0.92rem; line-height: 1.5; }
 .dv-profile-wrap { display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 20px; border-radius: 22px; overflow: hidden; background: var(--dv-bg-elevated); }
 .dv-profile-hero { width: 100%; padding: 30px 20px 22px; background: linear-gradient(160deg, var(--dv-accent) 0%, #0a3d91 100%); display: flex; flex-direction: column; align-items: center; }
-.dv-profile-img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.9); margin-bottom: 14px; }
+.dv-profile-img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.9); margin-bottom: 14px; }
 .dv-profile-name { font-size: 1.3rem; font-weight: 800; margin: 0 0 10px; color: #fff; }
-.dv-profile-role { font-size: 0.8rem; color: #fff; font-weight: 700; padding: 6px 14px; background: rgba(255,255,255,0.16); border-radius: 20px; }
+.dv-profile-role { font-size: 1rem; color: #fff; font-weight: 700; padding: 6px 14px; background: rgba(255,255,255,0.16); border-radius: 20px; }
 .dv-profile-body { width: 100%; padding: 20px 18px 22px; text-align: left; }
-.dv-profile-bio { font-size: 0.95rem; line-height: 1.6; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+.dv-text-card { background: var(--dv-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--dv-border); margin-bottom: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+.dv-text-card-title { color: var(--dv-accent); font-size: 1.2rem; font-weight: 700; margin: 0 0 12px; line-height: 1.3; }
+.dv-profile-bio { font-size: 1rem; line-height: 1.5; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; color: var(--dv-text-secondary); }
 .dv-profile-bio.expanded { display: block; -webkit-line-clamp: unset; }
-.dv-bio-toggle { background: none; border: none; color: var(--dv-accent); font-weight: 700; cursor: pointer; padding: 8px 0 0; font-size: 0.9rem; }
+.dv-bio-toggle { background: none; border: none; color: var(--dv-accent); font-weight: 800; cursor: pointer; padding: 8px 0 0; font-size: 1.5rem; }
 .dv-action-group { width: 100%; display: flex; flex-direction: column; gap: 12px; margin: 20px 0 4px; }
 .dv-pill-btn { width: 100%; min-height: 52px; border-radius: 26px; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 1rem; font-weight: 700; text-decoration: none; box-sizing: border-box; }
 .dv-pill-solid { background: var(--dv-accent); color: #fff; border: none; }
