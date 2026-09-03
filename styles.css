@@ -182,7 +182,7 @@ button, input, textarea { font-family: inherit; }
 .dv-action-group { width: 100%; display: flex; flex-direction: column; gap: 12px; margin: 20px 0 4px; }
 .dv-pill-btn { width: 100%; min-height: 52px; border-radius: 26px; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 1rem; font-weight: 700; text-decoration: none; box-sizing: border-box; }
 .dv-pill-solid { background: var(--dv-accent); color: #fff; border: none; }
-.dv-pill-outline { background: transparent; color: var(--dv-accent); border: 2px solid var(--dv-accent); }
+.dv-pill-green { background: #25D366; color: #fff; border: none; }
 .dv-stats-card { width: 100%; background: var(--dv-bg); border-radius: 18px; padding: 18px 12px; margin-top: 10px; }
 .dv-stats-grid { display: flex; align-items: center; justify-content: space-between; }
 .dv-stat-item { flex: 1; text-align: center; position: relative; }
