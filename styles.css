@@ -176,7 +176,7 @@ button, input, textarea { font-family: inherit; }
 .dv-profile-name { font-size: 1.3rem; font-weight: 800; margin: 0 0 10px; color: #fff; }
 .dv-profile-role { font-size: 1rem; color: #fff; font-weight: 700; padding: 6px 14px; background: rgba(255,255,255,0.16); border-radius: 20px; }
 .dv-profile-body { width: 100%; padding: 20px 18px 22px; text-align: left; }
-.dv-text-card { background: var(--dv-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--dv-border); margin-bottom: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+.dv-text-card { background: var(--dv-bg); border-radius: 16px; padding: 16px 12px; border: 1px solid var(--dv-border); margin: 0 -10px 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
 .dv-text-card-title { color: var(--dv-accent); font-size: 1.2rem; font-weight: 700; margin: 0 0 12px; line-height: 1.3; }
 .dv-profile-bio { font-size: 1rem; line-height: 1.5; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; color: var(--dv-text-secondary); }
 .dv-profile-bio.expanded { display: block; -webkit-line-clamp: unset; }
