@@ -170,12 +170,15 @@ button, input, textarea { font-family: inherit; }
 .dv-info-row { display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: var(--dv-bg-elevated); border-radius: 16px; }
 .dv-info-icon { width: 42px; height: 42px; border-radius: 50%; background: rgba(24,119,242,0.12); color: var(--dv-accent); display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .dv-info-text { font-size: 0.92rem; line-height: 1.5; }
-.dv-profile-wrap { display: flex; flex-direction: column; align-items: center; text-align: center; margin-bottom: 20px; border-radius: 22px; overflow: hidden; background: var(--dv-bg-elevated); }
+.dv-profile-wrap { display: flex; flex-direction: column; align-items: stretch; text-align: center; margin-bottom: 20px; background: var(--dv-bg-elevated); }
+.dv-page-body.dv-page-flush { padding: 0; }
 .dv-profile-hero { width: 100%; padding: 30px 20px 22px; background: linear-gradient(160deg, var(--dv-accent) 0%, #0a3d91 100%); display: flex; flex-direction: column; align-items: center; }
-.dv-profile-img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 3px solid rgba(255,255,255,0.9); margin-bottom: 14px; }
+.dv-profile-ring { width: 176px; height: 176px; border-radius: 50%; padding: 5px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; background: conic-gradient(from 0deg, #ffffff 0%, var(--dv-accent) 30%, #ffffff 55%, var(--dv-accent) 85%, #ffffff 100%); box-shadow: 0 10px 28px rgba(0,0,0,0.3); animation: dv-ring-spin 6s linear infinite; }
+@keyframes dv-ring-spin { to { transform: rotate(360deg); } }
+.dv-profile-img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 3px solid #ffffff; display: block; }
 .dv-profile-name { font-size: 1.3rem; font-weight: 800; margin: 0 0 10px; color: #fff; }
 .dv-profile-role { font-size: 1rem; color: #fff; font-weight: 700; padding: 6px 14px; background: rgba(255,255,255,0.16); border-radius: 20px; }
-.dv-profile-body { width: 100%; padding: 20px 18px 22px; text-align: left; }
+.dv-profile-body { width: 100%; padding: 26px 18px 22px; text-align: left; background: var(--dv-bg); border-radius: 26px 26px 0 0; margin-top: -20px; position: relative; box-shadow: 0 -10px 24px rgba(0,0,0,0.10); }
 .dv-text-card { background: var(--dv-bg); border-radius: 16px; padding: 20px; border: 1px solid var(--dv-border); margin-bottom: 16px; box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
 .dv-text-card-title { color: var(--dv-accent); font-size: 1.2rem; font-weight: 700; margin: 0 0 12px; line-height: 1.3; }
 .dv-profile-bio { font-size: 1rem; line-height: 1.5; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; color: var(--dv-text-secondary); }
