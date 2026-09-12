@@ -821,7 +821,7 @@ var DV_PAGES = {
   "about-mog": {
     title: "About the Man of God",
     html: '<div class="dv-profile-wrap"><div class="dv-profile-hero">' +
-      '<img class="dv-profile-img" src="YOUR_PHOTO_URL_HERE" alt="" />' +
+      '<div class="dv-profile-ring"><img class="dv-profile-img" src="YOUR_PHOTO_URL_HERE" alt="" /></div>' +
       '<h2 class="dv-profile-name">Reverend [Your Name]</h2>' +
       '<span class="dv-profile-role">Prophet of God \u00b7 Founder &amp; Visionary \u00b7 Trainer &amp; Researcher \u00b7 Full Stack Developer</span>' +
       '</div><div class="dv-profile-body">' +
@@ -874,6 +874,7 @@ function dvOpenPage(key) {
   if (!page) return;
   dvOpenPageRaw(page.title, page.html);
   if (key === "about-mog" || key === "about") {
+    $("dvPageBody").classList.add("dv-page-flush");
     var bioBtn = $("dvBioBtn"), bioText = $("dvBioText");
     if (bioBtn && bioText) bioBtn.addEventListener("click", function () {
       bioText.classList.toggle("expanded");
@@ -884,6 +885,7 @@ function dvOpenPage(key) {
 function dvOpenPageRaw(title, html) {
   $("dvPageTitle").textContent = title;
   $("dvPageBody").innerHTML = html;
+  $("dvPageBody").classList.remove("dv-page-flush");
   $("dvPageOverlay").classList.remove("dv-hidden");
 }
 function dvClosePage() { $("dvPageOverlay").classList.add("dv-hidden"); }
