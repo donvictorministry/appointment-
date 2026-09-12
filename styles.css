@@ -173,9 +173,10 @@ button, input, textarea { font-family: inherit; }
 .dv-profile-wrap { display: flex; flex-direction: column; align-items: stretch; text-align: center; margin-bottom: 20px; background: var(--dv-bg-elevated); }
 .dv-page-body.dv-page-flush { padding: 0; }
 .dv-profile-hero { width: 100%; padding: 30px 20px 22px; background: linear-gradient(160deg, var(--dv-accent) 0%, #0a3d91 100%); display: flex; flex-direction: column; align-items: center; }
-.dv-profile-ring { width: 176px; height: 176px; border-radius: 50%; padding: 5px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; background: conic-gradient(from 0deg, #ffffff 0%, var(--dv-accent) 30%, #ffffff 55%, var(--dv-accent) 85%, #ffffff 100%); box-shadow: 0 10px 28px rgba(0,0,0,0.3); animation: dv-ring-spin 6s linear infinite; }
+.dv-profile-ring { width: 176px; height: 176px; border-radius: 50%; padding: 5px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 28px rgba(0,0,0,0.3); position: relative; z-index: 1; }
+.dv-profile-ring::before { content: ""; position: absolute; inset: 0; border-radius: 50%; background: conic-gradient(from 0deg, #ffffff 0%, var(--dv-accent) 30%, #ffffff 55%, var(--dv-accent) 85%, #ffffff 100%); animation: dv-ring-spin 6s linear infinite; z-index: -1; }
 @keyframes dv-ring-spin { to { transform: rotate(360deg); } }
-.dv-profile-img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 3px solid #ffffff; display: block; }
+.dv-profile-img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 3px solid #ffffff; display: block; background: #ffffff; }
 .dv-profile-name { font-size: 1.3rem; font-weight: 800; margin: 0 0 10px; color: #fff; }
 .dv-profile-role { font-size: 1rem; color: #fff; font-weight: 700; padding: 6px 14px; background: rgba(255,255,255,0.16); border-radius: 20px; }
 .dv-profile-body { width: 100%; padding: 26px 18px 22px; text-align: left; background: var(--dv-bg); border-radius: 26px 26px 0 0; margin-top: -20px; position: relative; box-shadow: 0 -10px 24px rgba(0,0,0,0.10); }
