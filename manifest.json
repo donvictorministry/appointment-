@@ -9,7 +9,17 @@
   "background_color": "#1877F2",
   "theme_color": "#1877F2",
   "icons": [
-    { "src": "YOUR_APP_ICON_URL_HERE", "sizes": "192x192", "type": "image/png", "purpose": "any" },
-    { "src": "YOUR_APP_ICON_URL_HERE", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+    {
+      "src": "https://i.ibb.co/F1TbCvn/file-00000000f6108210a1ae8043e7452fef.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "https://i.ibb.co/F1TbCvn/file-00000000f6108210a1ae8043e7452fef.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
   ]
 }
