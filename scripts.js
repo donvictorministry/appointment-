@@ -4,9 +4,9 @@
 // Appointment Chat (dv build) — locked PIN gate, then a WhatsApp-native shell.
 // =============================================================================
 
-var DV_GAS_URL = "PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+var DV_GAS_URL = "https://script.google.com/macros/s/AKfycbwlN8yM6WBYdoul_PxHRxEfSGtq9mpz4zIXzu0vtUxn5LJo6EWqvT1qBCaiBh2DzQMb5Q/exec";
 var DV_PIN_PREFIX = "0000";
-var DV_STATUS_CSV_URL = "PASTE_YOUR_PUBLISHED_STATUS_CSV_URL_HERE";
+var DV_STATUS_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTc0bwmN36PGOaNye21LYGiJG9DgoMR_sGAFiQ16jFOjyyIh2SwBVs2jo8ztQ47oabKtM4PiJGy_3cX/pub?gid=2124303984&single=true&output=csv";
 var DV_ACCENTS = ["#1877F2", "#7C3AED", "#16A34A", "#0D9488", "#EA580C", "#DC2626", "#DB2777", "#4F46E5", "#D97706", "#475569"];
 
 function $(id) { return document.getElementById(id); }
@@ -821,18 +821,18 @@ var DV_PAGES = {
   "about-mog": {
     title: "About the Man of God",
     html: '<div class="dv-profile-wrap"><div class="dv-profile-hero">' +
-      '<div class="dv-profile-ring"><img class="dv-profile-img" src="YOUR_PHOTO_URL_HERE" alt="" /></div>' +
-      '<h2 class="dv-profile-name">Reverend [Your Name]</h2>' +
-      '<span class="dv-profile-role">Prophet of God \u00b7 Founder &amp; Visionary \u00b7 Trainer &amp; Researcher \u00b7 Full Stack Developer</span>' +
+      '<div class="dv-profile-ring"><img class="dv-profile-img" src="https://i.ibb.co/84dRKY60/Screenshot-20260103-005841.png" alt="" /></div>' +
+      '<h2 class="dv-profile-name">Rev. Don Victor, PhD</h2>' +
+      '<span class="dv-profile-role">Prophet of God | Visionary | Trainer | Researcher | Full Stack Developer</span>' +
       '</div><div class="dv-profile-body">' +
       '<div class="dv-text-card">' +
-      '<div class="dv-text-card-title">About Our<br>Founder</div>' +
-      '<div id="dvBioText" class="dv-profile-bio">Our Founder is an ordained Reverend Minister of the Lord Jesus Christ, a multifaceted personality with a PhD in Christian Education and Philosophy, serving as a trainer, researcher, and theologian dedicated to online counseling.</div>' +
+      '<div class="dv-text-card-title">About The Servant of God</div>' +
+      '<div id="dvBioText" class="dv-profile-bio">Rev. Don Victor is an ordained Reverend Minister of the Lord Jesus Christ, a multifaceted personality, scholar, interdisciplinary researcher, trainer, web developer, and software engineer whose work integrates faith, scholarship, technology, and global impact. His academic journey spans from foundational WAEC qualification to a Doctor of Philosophy (PhD) in Education, giving him a broad foundation for addressing complex spiritual, educational, technological, and organizational challenges.</p><p>Driven by a vision to reach six million souls, Dr. Don Victor has established and developed diverse online and offline ministries, educational initiatives, and technology-driven solutions. His expertise in software engineering enables him to research, design, and deploy practical digital tools that streamline operations, automate processes, support online engagement, deliver education, and advance institutional growth.</p><p>As an innovator, he translates scholarly and ministry frameworks into scalable systems and platforms for spiritual growth, Christian education, leadership development, and ministry operations.</p><p>Through his global initiatives, he facilitates collaboration across diverse networks and builds bridges between faith, education, research, and modern technology to bring truth, healing, and transformation to every nation and sphere of society.</div>' +
       '<button id="dvBioBtn" class="dv-bio-toggle">Show more</button>' +
       '</div>' +
       '<div class="dv-action-group">' +       
-     '<a href="PASTE_YOUR_PORTFOLIO_LINK_HERE" target="_blank" class="dv-pill-btn dv-pill-solid"><span style="text-decoration: underline;">View Portfolio</span></a>' +
-      '<a href="PASTE_YOUR_WHATSAPP_LINK_HERE" target="_blank" class="dv-pill-btn dv-pill-green"><span class="dv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span><span style="text-decoration: underline;">Follow WhatsApp Channel</span></a>' +
+     '<a href="https://www.donvictoracademy.net/" target="_blank" class="dv-pill-btn dv-pill-solid"><span style="text-decoration: underline;">View Portfolio</span></a>' +
+      '<a href="https://wa.me/2348086590253" target="_blank" class="dv-pill-btn dv-pill-green"><span class="dv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span><span style="text-decoration: underline;">Follow WhatsApp Channel</span></a>' +
       '</div>' +
       '<div class="dv-stats-card"><div class="dv-stats-grid">' +
       '<div class="dv-stat-item"><div class="dv-stat-num">70+</div><div class="dv-stat-label">Nations</div></div>' +
@@ -842,7 +842,7 @@ var DV_PAGES = {
   },
   "mission": {
     title: "About Mission",
-    html: "<h3>Our Mission</h3><p>Dedicated to online counseling and ministry, reaching people wherever they are, with a private appointment-based chat that respects everyone's time and privacy.</p>"
+    html: "<h3>Our Mission</h3><p>Six Million Souls Campaign</p><p>Dedicated to online counseling and ministry, reaching people wherever they are, with the word of God. Our App is a private appointment-based chat that respects everyone's time and privacy.</p>"
   },
   "terms": {
     title: "Terms of Use",
@@ -860,10 +860,10 @@ var DV_PAGES = {
   "schedule": {
     title: "Appointment",
     html: '<h3>Schedule an Appointment</h3><p>Reach out through any of the channels below to request your appointment PIN.</p>' +
-      '<a href="mailto:PASTE_YOUR_EMAIL_HERE" class="dv-contact-row-item"><span class="dv-contact-icon-circle dv-btn-email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span><span><div class="dv-contact-btn-title">Email</div><div class="dv-contact-btn-sub">Send a message</div></span></a>' +
-      '<a href="PASTE_YOUR_FACEBOOK_LINK_HERE" target="_blank" class="dv-contact-row-item"><span class="dv-contact-icon-circle dv-btn-fb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></span><span><div class="dv-contact-btn-title">Facebook</div><div class="dv-contact-btn-sub">Message us</div></span></a>' +
-      '<a href="PASTE_YOUR_WHATSAPP_LINK_HERE" target="_blank" class="dv-contact-row-item"><span class="dv-contact-icon-circle dv-btn-wa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span><span><div class="dv-contact-btn-title">WhatsApp</div><div class="dv-contact-btn-sub">Chat instantly</div></span></a>' +
-      '<a href="tel:PASTE_YOUR_PHONE_HERE" class="dv-contact-row-item"><span class="dv-contact-icon-circle dv-btn-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span><span><div class="dv-contact-btn-title">Phone</div><div class="dv-contact-btn-sub">Call directly</div></span></a>'
+      '<a href="mailto: donvictorministry@gmail.com" class="dv-contact-row-item"><span class="dv-contact-icon-circle dv-btn-email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span><span><div class="dv-contact-btn-title">Email</div><div class="dv-contact-btn-sub">Send a message</div></span></a>' +
+      '<a href="https://facebook.com/Rev.DonVictor"target="_blank" class="dv-contact-row-item"><span class="dv-contact-icon-circle dv-btn-fb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></span><span><div class="dv-contact-btn-title">Facebook</div><div class="dv-contact-btn-sub">Message us</div></span></a>' +
+      '<a href="https://wa.me/2348086590253" target="_blank" class="dv-contact-row-item"><span class="dv-contact-icon-circle dv-btn-wa"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg></span><span><div class="dv-contact-btn-title">WhatsApp</div><div class="dv-contact-btn-sub">Chat instantly</div></span></a>' +
+      '<a href="+2347035794649" class="dv-contact-row-item"><span class="dv-contact-icon-circle dv-btn-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></span><span><div class="dv-contact-btn-title">Phone</div><div class="dv-contact-btn-sub">Call directly</div></span></a>'
   }
 };
 DV_PAGES["about"] = DV_PAGES["about-mog"]; // gate's "About" link = About the Man of God
