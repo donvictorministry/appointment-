@@ -367,9 +367,9 @@ function dvRenderHome() {
   $("dvTabBody").innerHTML =
     '<div class="dv-home-hero">' +
       '<div class="dv-home-hero-banner">' +
-        '<img class="dv-home-hero-img" src="YOUR_PHOTO_URL_HERE" alt="" />' +
-        '<div class="dv-home-hero-name">Reverend [Your Name]</div>' +
-        '<div class="dv-home-hero-role">Man of God \u00b7 Trainer &amp; Researcher \u00b7 Developer</div>' +
+        '<img class="dv-home-hero-img" src="https://i.ibb.co/84dRKY60/Screenshot-20260103-005841.png" alt="" />' +
+        '<div class="dv-home-hero-name">Rev. Don Victor, PhD</div>' +
+        '<div class="dv-home-hero-role">Prophet of God \u00b7 Trainer &amp; Researcher \u00b7 Developer</div>' +
       '</div>' +
     '</div>' +
     '<div class="dv-quick-actions">' +
