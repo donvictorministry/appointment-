@@ -32,8 +32,63 @@
 
 <!-- ============================= LOCKED GATE (unchanged) ============================= -->
 <div id="dvGate" class="dv-gate">
+  <style>
+  .dvt-wrap{position:absolute;top:0;left:0;right:0;min-height:49px;display:flex;align-items:center;justify-content:center;padding:10px 16px;background:#FFD700;overflow:hidden;z-index:5}
+  .dvt-inner{position:relative;width:100%;height:36px;overflow:hidden}
+  .dvt-text{position:absolute;left:0;top:0;color:#000;font-size:22px;font-weight:600;white-space:nowrap;will-change:transform}
+  .dvt-cursor{color:#000;font-weight:900;animation:dvt-blink 1s step-end infinite}
+  @keyframes dvt-blink{0%,100%{opacity:1}50%{opacity:0}}
+</style>
+<div class="dvt-wrap">
+  <div class="dvt-inner" id="dvtInner">
+    <span class="dvt-text" id="dvtText"><span id="dvtChars"></span><span class="dvt-cursor">|</span></span>
+  </div>
+</div>
+<script>
+  (function(){
+    var cfg={
+      messages:[
+  "Welcome to Don Victor Ministries App",
+  "We are pleased to welcome you!",
+  "Would you like to speak with the Man of God? Tap the Schedule button to request an appointment.",
+  "Send us a message and tell us how we may assist you.",
+  "Expect a response from us within 48 hours.",
+  "Appointments are free.",
+  "Personal prayer is also available by phone",
+  "Located in Port Harcourt? Visit us at our office.",
+  "Connect with the Man of God on WhatsApp.",
+  "Reach us by phone anytime.",
+  "Tap Schedule to book"
+],
+  typeSpeed:180,eraseSpeed:50,holdDelay:10000,restartDelay:900,gap:8
+    };
+    var inner=document.getElementById("dvtInner"),text=document.getElementById("dvtText"),chars=document.getElementById("dvtChars");
+    var m=0,i=0,erasing=false,current=cfg.messages[0];
+    function shift(){
+      var overflow=text.scrollWidth-inner.clientWidth+cfg.gap;
+      text.style.transform=overflow>0?"translateX("+(-overflow)+"px)":"translateX(0)";
+    }
+    function step(){
+      if(!erasing){
+        chars.textContent=current.slice(0,i+1);i++;shift();
+        if(i===current.length){erasing=true;setTimeout(step,cfg.holdDelay);return;}
+        setTimeout(step,cfg.typeSpeed);
+      } else {
+        chars.textContent=current.slice(0,i-1);i--;shift();
+        if(i===0){
+          text.style.transform="translateX(0)";
+          erasing=false;m=(m+1)%cfg.messages.length;current=cfg.messages[m];
+          setTimeout(step,cfg.restartDelay);return;
+        }
+        setTimeout(step,cfg.eraseSpeed);
+      }
+    }
+    step();
+  })();
+</script>
   <div class="dv-gate-card">
-    <div id="dvGateDefault">
+  
+ <div id="dvGateDefault">
       <div id="dvGateLockIcon" class="dv-gate-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div>
       <h1 class="dv-gate-title">Enter Appointment PIN</h1>
       <div class="dv-pin-group">
