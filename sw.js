@@ -10,7 +10,7 @@
 // - Network-first for the GAS API calls (never serve stale chat data from
 //   cache); cache-first for the app shell and images.
 
-var DV_CACHE_NAME = "dv-cache-v3.1";
+var DV_CACHE_NAME = "dv-cache-v3.2";
 var DV_SHELL_FILES = [
   "./index.html",
   "./manifest.json",
