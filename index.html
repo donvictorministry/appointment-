@@ -109,7 +109,7 @@
     <div class="dv-gate-links">
       <button type="button" class="dv-gate-link-btn" data-page="schedule">
         <span class="dv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span>
-        Schedule
+        Contact 
       </button>
       <button type="button" class="dv-gate-link-btn" data-page="about">
         <span class="dv-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg></span>
@@ -120,7 +120,40 @@
         Terms
       </button>
     </div>
-
+<style>
+.dva-btn{display:block;width:100%;margin-top:20px;min-height:48px;border-radius:12px;background:#FFD700;color:#E41E3F;font-weight:700;font-size:1rem;text-align:center;line-height:48px;text-decoration:none;box-shadow:0 4px 0 #b89400,0 6px 12px rgba(0,0,0,.18);animation:dva-bounce 6s ease-in-out infinite;transition:transform .08s ease,box-shadow .08s ease;-webkit-tap-highlight-color:transparent;cursor:pointer}
+.dva-btn:active{transform:translateY(4px);box-shadow:0 0 0 #b89400,0 2px 4px rgba(0,0,0,.18);animation-play-state:paused}
+@keyframes dva-bounce{0%,70%,100%{transform:translateY(0) scale(1)}75%{transform:translateY(-8px) scale(1.05)}80%{transform:translateY(0) scale(1)}85%{transform:translateY(-4px) scale(1.03)}90%{transform:translateY(0) scale(1)}}
+.dva-ov{position:fixed;inset:0;z-index:300;background:rgba(0,0,0,.6);display:flex;align-items:center;justify-content:center;padding:28px;animation:dva-fade .18s ease-out}
+.dva-card{position:relative;background:#FFFFFF;color:#1C1E21;border-radius:24px;padding:32px 24px 28px;max-width:340px;width:100%;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.35),0 4px 12px rgba(0,0,0,.15);animation:dva-pop .22s cubic-bezier(.2,.8,.2,1)}
+.dva-badge{width:60px;height:60px;border-radius:50%;background:linear-gradient(160deg,#FFD700,#f0b400);display:flex;align-items:center;justify-content:center;font-size:1.7rem;margin:0 auto 16px;box-shadow:0 6px 16px rgba(240,180,0,.35)}
+.dva-t{font-size:20px;font-weight:800;color:#1C1E21;margin:0 0 10px;letter-spacing:.2px}
+.dva-m{font-size:20px;line-height:1.5;color:#3A3B3C;margin:0}
+.dva-x{position:absolute;top:10px;right:10px;width:40px;height:40px;border:none;background:transparent;color:#65676B;font-size:1.5rem;line-height:1;cursor:pointer;border-radius:50%;display:flex;align-items:center;justify-content:center;-webkit-tap-highlight-color:transparent;transition:background .12s ease}
+.dva-x:active{background:#F0F2F5}
+@keyframes dva-fade{from{opacity:0}to{opacity:1}}
+@keyframes dva-pop{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
+</style>
+<a class="dva-btn" id="dvaBtn">Schedule Appointment</a>
+<div class="dva-ov" id="dvaOv" style="display:none">
+  <div class="dva-card">
+    <button class="dva-x" id="dvaX" aria-label="Close">&times;</button>
+    <div class="dva-badge">📝</div>
+    <h3 class="dva-t">Opening Soon</h3>
+    <p class="dva-m">Appointment form is underway. Please tap <strong>Contact</strong> to reach us in the meantime.</p>
+    <p class="dva-m"><strong>God bless you.</strong> </p>
+</div>
+</div>
+<script>
+(function(){
+  var b=document.getElementById("dvaBtn"),o=document.getElementById("dvaOv"),x=document.getElementById("dvaX"),t=null;
+  function close(){o.style.display="none";if(t){clearTimeout(t);t=null}}
+  function open(){o.style.display="flex";if(t)clearTimeout(t);t=setTimeout(close,6000)}
+  b.addEventListener("click",function(e){e.preventDefault();open()});
+  x.addEventListener("click",close);
+  o.addEventListener("click",function(e){if(e.target===o)close()});
+})();
+</script>
     <!-- Hidden Man of God door: tap the first PIN box 4x. Invisible unless triggered. -->
     <div id="dvMogReveal" class="dv-mog-reveal dv-hidden">
       <div class="dv-mog-reveal-title">Man of God Sign-in</div>
